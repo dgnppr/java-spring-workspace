@@ -1,0 +1,13 @@
+dependencies {
+    implementation group: 'net.bytebuddy', name: 'byte-buddy', version: '1.14.10'
+}
+
+// Manifest 파일 편집 ref: https://blog.naver.com/kkson50/222491543387
+
+jar {
+    manifest {
+        attributes('Implementation-Title': project.name,
+                'Implementation-Version': project.version
+        )
+    }
+}
