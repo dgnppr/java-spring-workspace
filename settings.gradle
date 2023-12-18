@@ -7,4 +7,7 @@ include 'jvm'
 include 'bytecode'
 include 'bytecode:agent'
 findProject(':bytecode:agent')?.name = 'agent'
+include 'reflection'
+include 'reflection:custom-di'
+findProject(':reflection:custom-di')?.name = 'custom-di'
 
