@@ -2,6 +2,6 @@ rootProject.name = 'java-101'
 include 'annotation'
 include 'builder'
 include 'record'
-include 'java_version'
+include 'version'
 include 'jvm'
 
