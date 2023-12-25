@@ -10,4 +10,5 @@ findProject(':bytecode:agent')?.name = 'agent'
 include 'reflection'
 include 'reflection:custom-di'
 findProject(':reflection:custom-di')?.name = 'custom-di'
+include 'collections'
 
