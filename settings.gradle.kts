@@ -27,3 +27,11 @@ include("module-spring:coupon-issuance-with-redis")
 findProject(":module-spring:coupon-issuance-with-redis")?.name = "coupon-issuance-with-redis"
 include("module-spring:restdocs-with-openapi")
 findProject(":module-spring:restdocs-with-openapi")?.name = "restdocs-with-openapi"
+include("module-spring:spring-101")
+findProject(":module-spring:spring-101")?.name = "spring-101"
+include("module-spring:spring-101:ioc-di")
+findProject(":module-spring:spring-101:ioc-di")?.name = "ioc-di"
+include("module-spring:spring-101:tomcat")
+findProject(":module-spring:spring-101:tomcat")?.name = "tomcat"
+include("module-spring:spring-101:transcation")
+findProject(":module-spring:spring-101:transcation")?.name = "transcation"
