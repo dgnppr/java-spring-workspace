@@ -1,0 +1,18 @@
+ifndef::snippets[]
+:snippets: ../../build/generated-snippets
+endif::[]
+= Test REST API Docs
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 3
+:sectlinks:
+:sectnums:
+
+[[Test]]
+== 개요
+
+include::{snippets}/test-api/curl-request.adoc[]
+
+
