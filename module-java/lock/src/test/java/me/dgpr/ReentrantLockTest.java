@@ -1,5 +1,6 @@
 package me.dgpr;
 
+import java.time.Instant;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
@@ -27,6 +28,8 @@ class ReentrantLockTest {
         lock.isLocked(); // 락 잠금 확인
         lock.tryLock(); // long polling 방식
         lock.tryLock(1, TimeUnit.MINUTES); // 타임아웃 설정
+        Instant.now();
+        System.nanoTime();
     }
 
     @Test

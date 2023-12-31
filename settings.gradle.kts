@@ -35,3 +35,5 @@ include("module-spring:spring-101:tomcat")
 findProject(":module-spring:spring-101:tomcat")?.name = "tomcat"
 include("module-spring:spring-101:transcation")
 findProject(":module-spring:spring-101:transcation")?.name = "transcation"
+include("module-java:effective-java-3-E")
+findProject(":module-java:effective-java-3-E")?.name = "effective-java-3-E"
