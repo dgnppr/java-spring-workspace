@@ -31,7 +31,7 @@ public class VideoAnalysisEventListener {
 
     @EventListener
     @Transactional
-    public void handleVideoAnalysisRequest(VideoAnalysisEvent videoAnalysisEvent) {
+    public void propagate(VideoAnalysisEvent videoAnalysisEvent) {
         List<VideoAnalysisRequest> requests = videoAnalysisEvent.requests();
 
         // 모든 요청을 병렬로 처리

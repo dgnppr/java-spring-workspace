@@ -1,6 +1,8 @@
 package me.dgpr.entity;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
@@ -9,6 +11,7 @@ import jakarta.persistence.Table;
 public class StudyRecordEntity {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idx;
 
     private String videoUrl;
