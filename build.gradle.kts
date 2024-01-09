@@ -1,3 +1,5 @@
+import org.gradle.api.JavaVersion.VERSION_21
+
 plugins {
     id("java")
     id("org.springframework.boot") version "3.2.1"
@@ -9,7 +11,7 @@ allprojects {
 
     group = "me.dgpr"
     version = "0.0.1-SNAPSHOT"
-    java.sourceCompatibility = JavaVersion.VERSION_21
+    java.sourceCompatibility = VERSION_21
 
     repositories {
         mavenCentral()
@@ -22,6 +24,8 @@ subprojects {
     apply(plugin = "io.spring.dependency-management")
 
     dependencies {
+        testImplementation(platform("org.junit:junit-bom:5.9.1"))
+        testImplementation("org.junit.jupiter:junit-jupiter")
         compileOnly("org.projectlombok:lombok:1.18.30")
         annotationProcessor("org.projectlombok:lombok:1.18.30")
         testCompileOnly("org.projectlombok:lombok:1.18.30")
