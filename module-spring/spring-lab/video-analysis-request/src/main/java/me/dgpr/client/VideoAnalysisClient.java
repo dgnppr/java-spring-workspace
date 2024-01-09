@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @FeignClient(
         name = "video-analysis-client",
-        url = "http://localhost:8081" // AI LoadBalancerServer or Queue Server
+        url = "http://localhost:8081", // AI LoadBalancerServer or Queue Server
+        configuration = VideoAnalysisConfig.class
 )
 public interface VideoAnalysisClient {
 
