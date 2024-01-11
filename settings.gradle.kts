@@ -47,3 +47,7 @@ findProject(":module-spring:spring-lab:video-analysis-request")?.name = "video-a
 
 include("module-spring:spring-lab")
 findProject(":module-spring:spring-lab")?.name = "spring-lab"
+include("module-java:future")
+findProject(":module-java:future")?.name = "future"
+include("module-java:io")
+findProject(":module-java:io")?.name = "io"
