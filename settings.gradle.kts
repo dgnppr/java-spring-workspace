@@ -34,7 +34,10 @@ include("module-java:java-101:io")
 findProject(":module-java:java-101:io")?.name = "io"
 include("module-java:effective-java-3-E")
 findProject(":module-java:effective-java-3-E")?.name = "effective-java-3-E"
-
+include("module-java:java-labs")
+findProject(":module-java:java-labs")?.name = "java-labs"
+include("module-java:java-labs:flake")
+findProject(":module-java:java-labs:flake")?.name = "flake"
 
 
 include("module-spring")
@@ -54,7 +57,4 @@ include("module-spring:spring-lab:video-analysis-request")
 findProject(":module-spring:spring-lab:video-analysis-request")?.name = "video-analysis-request"
 include("module-spring:spring-lab")
 findProject(":module-spring:spring-lab")?.name = "spring-lab"
-include("module-java:java-labs")
-findProject(":module-java:java-labs")?.name = "java-labs"
-include("module-java:java-labs:flake")
-findProject(":module-java:java-labs:flake")?.name = "flake"
+
