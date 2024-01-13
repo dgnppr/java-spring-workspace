@@ -56,3 +56,5 @@ include("module-spring:spring-lab")
 findProject(":module-spring:spring-lab")?.name = "spring-lab"
 include("module-java:java-labs")
 findProject(":module-java:java-labs")?.name = "java-labs"
+include("module-java:java-labs:flake")
+findProject(":module-java:java-labs:flake")?.name = "flake"
