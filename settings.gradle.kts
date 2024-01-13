@@ -1,27 +1,41 @@
 rootProject.name = "java-spring-workspace"
+
 include("module-java")
-include("module-java:annotation")
-findProject(":module-java:annotation")?.name = "annotation"
-include("module-java:builder")
-findProject(":module-java:builder")?.name = "builder"
-include("module-java:record")
-findProject(":module-java:record")?.name = "record"
-include("module-java:version")
-findProject(":module-java:version")?.name = "version"
-include("module-java:jvm")
-findProject(":module-java:jvm")?.name = "jvm"
-include("module-java:bytecode")
-findProject(":module-java:bytecode")?.name = "bytecode"
-include("module-java:bytecode:agent")
-findProject(":module-java:bytecode:agent")?.name = "agent"
-include("module-java:reflection")
-findProject(":module-java:reflection")?.name = "reflection"
-include("module-java:reflection:custom-di")
-findProject(":module-java:reflection:custom-di")?.name = "custom-di"
-include("module-java:util-collections")
-findProject(":module-java:util-collections")?.name = "util-collections"
-include("module-java:lock")
-findProject(":module-java:lock")?.name = "lock"
+
+include("module-java:java-101")
+findProject(":module-java:java-101")?.name = "java-101"
+include("module-java:java-101:annotation")
+findProject(":module-java:java-101:annotation")?.name = "annotation"
+include("module-java:java-101:builder")
+findProject(":module-java:java-101:builder")?.name = "builder"
+include("module-java:java-101:record")
+findProject(":module-java:java-101:record")?.name = "record"
+include("module-java:java-101:version")
+findProject(":module-java:java-101:version")?.name = "version"
+include("module-java:java-101:jvm")
+findProject(":module-java:java-101:jvm")?.name = "jvm"
+include("module-java:java-101:bytecode")
+findProject(":module-java:java-101:bytecode")?.name = "bytecode"
+include("module-java:java-101:bytecode:agent")
+findProject(":module-java:java-101:bytecode:agent")?.name = "agent"
+include("module-java:java-101:reflection")
+findProject(":module-java:java-101:reflection")?.name = "reflection"
+include("module-java:java-101:reflection:custom-di")
+findProject(":module-java:java-101:reflection:custom-di")?.name = "custom-di"
+include("module-java:java-101:util-collections")
+findProject(":module-java:java-101:util-collections")?.name = "util-collections"
+include("module-java:java-101:lock")
+findProject(":module-java:java-101:lock")?.name = "lock"
+include("module-java:java-101:util-function")
+findProject(":module-java:java-101:util-function")?.name = "util-function"
+include("module-java:java-101:future")
+findProject(":module-java:java-101:future")?.name = "future"
+include("module-java:java-101:io")
+findProject(":module-java:java-101:io")?.name = "io"
+include("module-java:effective-java-3-E")
+findProject(":module-java:effective-java-3-E")?.name = "effective-java-3-E"
+
+
 
 include("module-spring")
 include("module-spring:spring-lab:coupon-issuance-with-redis")
@@ -36,18 +50,9 @@ include("module-spring:spring-101:tomcat")
 findProject(":module-spring:spring-101:tomcat")?.name = "tomcat"
 include("module-spring:spring-101:transcation")
 findProject(":module-spring:spring-101:transcation")?.name = "transcation"
-include("module-java:effective-java-3-E")
-findProject(":module-java:effective-java-3-E")?.name = "effective-java-3-E"
-include("module-java:util-function")
-findProject(":module-java:util-function")?.name = "util-function"
-include("module-java:jwt")
-findProject(":module-java:jwt")?.name = "jwt"
 include("module-spring:spring-lab:video-analysis-request")
 findProject(":module-spring:spring-lab:video-analysis-request")?.name = "video-analysis-request"
-
 include("module-spring:spring-lab")
 findProject(":module-spring:spring-lab")?.name = "spring-lab"
-include("module-java:future")
-findProject(":module-java:future")?.name = "future"
-include("module-java:io")
-findProject(":module-java:io")?.name = "io"
+include("module-java:java-labs")
+findProject(":module-java:java-labs")?.name = "java-labs"
