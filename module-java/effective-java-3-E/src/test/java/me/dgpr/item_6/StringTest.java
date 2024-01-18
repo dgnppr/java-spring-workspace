@@ -9,7 +9,6 @@ public class StringTest {
         //Arrange
         Boolean.valueOf("String");
         //Act
-        Long
 
         //Assert
     }
