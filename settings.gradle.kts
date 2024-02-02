@@ -57,4 +57,5 @@ include("module-spring:spring-lab:video-analysis-request")
 findProject(":module-spring:spring-lab:video-analysis-request")?.name = "video-analysis-request"
 include("module-spring:spring-lab")
 findProject(":module-spring:spring-lab")?.name = "spring-lab"
-
+include("module-spring:spring-101:test")
+findProject(":module-spring:spring-101:test")?.name = "test"
