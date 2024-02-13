@@ -1,16 +1,14 @@
 package me.dgpr;
 
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@Slf4j
 @RestController
 public class MyController {
 
-    @GetMapping("/")
-    public String my() {
-        log.info("{}", Thread.currentThread().getName());
-        return "hello";
+    @GetMapping("/blocked")
+    public String getBlockedResponse() throws InterruptedException {
+        Thread.sleep(1000); // 비즈니스 로직 처리에 thread가 1초 blocking 되는 환경 가정
+        return "OK";
     }
 }
