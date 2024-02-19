@@ -1,0 +1,17 @@
+### 생성
+POST http://localhost:8080/test
+Content-Type: application/json
+
+{
+  "outerName": "dgpr",
+  "innerName": "dgpr"
+}
+
+### 업데이트
+POST http://localhost:8080/test/1/inners/1
+Content-Type: application/json
+
+{
+  "outerName": "dgprn",
+  "innerName": "dgpr"
+}

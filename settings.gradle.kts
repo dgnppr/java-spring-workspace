@@ -61,3 +61,5 @@ include("module-spring:spring-101:test")
 findProject(":module-spring:spring-101:test")?.name = "test"
 include("module-java:java-101:virtual-thread")
 findProject(":module-java:java-101:virtual-thread")?.name = "virtual-thread"
+include("module-spring:spring-data-jpa")
+findProject(":module-spring:spring-data-jpa")?.name = "spring-data-jpa"
