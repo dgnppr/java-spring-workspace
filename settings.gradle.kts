@@ -63,3 +63,5 @@ include("module-java:java-101:virtual-thread")
 findProject(":module-java:java-101:virtual-thread")?.name = "virtual-thread"
 include("module-spring:spring-data-jpa")
 findProject(":module-spring:spring-data-jpa")?.name = "spring-data-jpa"
+include("module-spring:spring-101:event-listener")
+findProject(":module-spring:spring-101:event-listener")?.name = "event-listener"
